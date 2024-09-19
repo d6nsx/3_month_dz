@@ -85,7 +85,7 @@ const converter = (element, targetElement1, targetElement2) => {
 
             if (element.id === "som") {
                 targetElement1.value = (element.value / data.usd).toFixed(2);
-                targetElement2.value = (element.value / data.won).toFixed(2);
+                targetElement2.value = (element.value * data.won).toFixed(2);
             }
             if (element.id === "usd") {
                 targetElement1.value = (element.value * data.usd).toFixed(2);
